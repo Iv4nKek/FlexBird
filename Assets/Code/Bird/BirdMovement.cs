@@ -1,4 +1,5 @@
 using System;
+using Code.Level;
 using UnityEngine;
 
 namespace Code
@@ -32,7 +33,13 @@ namespace Code
             
             _controller.OnJump += TryToJump;
             _collisionHandler.OnFloorCollision += ResetJumpCount;
+            GameState.Instance.OnPlatformActivation += OnPlatformActivated;
             _collisionHandler.OnWallCollision += ChangeDirection;
+        }
+
+        private void OnPlatformActivated( Platform platform)
+        {
+            ResetJumpCount();
         }
 
         private void TryToJump()
@@ -45,6 +52,7 @@ namespace Code
 
         private void Jump()
         {
+            _rigidbody.velocity = new Vector2();
             _rigidbody.AddForce(new Vector2(0f,1f)*_jumpPower);
             _currentJumpCount++;
         }

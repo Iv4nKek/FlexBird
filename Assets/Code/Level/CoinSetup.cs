@@ -1,6 +1,8 @@
+using UnityEngine;
+
 namespace Code.Level
 {
-    public class CoinSetup
+    public class CoinSetup : MonoBehaviour
     {
         
     }

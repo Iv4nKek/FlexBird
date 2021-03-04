@@ -2,8 +2,7 @@ using UnityEngine;
 
 namespace Code.Obstackles
 {
-    public abstract class Obstacle : ScriptableObject
+    public abstract class Obstacle : MonoBehaviour
     {
-        
     }
 }

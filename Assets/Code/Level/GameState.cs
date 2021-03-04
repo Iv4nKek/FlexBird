@@ -1,4 +1,5 @@
 using System;
+using Code.Obstackles;
 using UnityEngine;
 
 namespace Code.Level
@@ -8,7 +9,12 @@ namespace Code.Level
         private int _currentLevel;
         private int _currentMoney;
 
-        public event Action<Platform> OnPlatformActivation;
+        public static int CurrentLevel => _instance._currentLevel;
+
+        public int CurrentMoney => _currentMoney;
+
+        public event Action<Platform> OnPlatformActivation = delegate(Platform platform) {  };
+        public event Action<Obstacle> OnObstacleCrush = delegate(Obstacle obstacle) {  };
         
         
         
@@ -24,10 +30,16 @@ namespace Code.Level
             }
         }
 
-        private void HandlePlatformActivation(Platform platform)
+        public void HandlePlatformActivation(Platform platform)
         {
             _currentLevel++;
+            OnPlatformActivation(platform);
         }
+        public void HandleObstacleCrush(Obstacle obstacle)
+        {
+            OnObstacleCrush(obstacle);
+        }
+        
         
     }
 }
