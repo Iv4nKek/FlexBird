@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditor.U2D.Path;
 using UnityEngine;
 
 namespace Code.Obstackles
@@ -8,7 +7,13 @@ namespace Code.Obstackles
     public class ObstacleContainer : ScriptableObject
     {
         [SerializeField] private List<ObstaclePreset> _obstacles;
+        [SerializeField] private AnimationCurve _createProbability;
 
+
+        public bool ShouldBeSpawned(int level)
+        {
+            return Random.value < _createProbability.Evaluate(level);
+        }
         public ObstaclePreset GetRandomObstacle(int level)
         {
             ObstaclePreset result = null;
