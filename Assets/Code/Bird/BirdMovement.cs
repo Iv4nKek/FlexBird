@@ -1,0 +1,62 @@
+using System;
+using UnityEngine;
+
+namespace Code
+{
+    [RequireComponent(typeof(Rigidbody2D))]
+    public class BirdMovement : MonoBehaviour
+    {
+        [SerializeField][Range(1,5)] private int _jumpsCount;
+        [SerializeField] private float _sideSpeed;
+        [SerializeField] private float _jumpPower;
+
+        [SerializeField] private BirdController _controller;
+        [SerializeField] private BirdCollisionHandler _collisionHandler;
+        [SerializeField] private Rigidbody2D _rigidbody;
+
+        private int _currentJumpCount = 0;
+        private float _direction = 1;
+
+        private void ResetJumpCount()
+        {
+            _currentJumpCount = 0;
+        }
+
+        private void ChangeDirection()
+        {
+            _direction *= -1;
+        }
+
+        private void Start()
+        {
+            
+            _controller.OnJump += TryToJump;
+            _collisionHandler.OnFloorCollision += ResetJumpCount;
+            _collisionHandler.OnWallCollision += ChangeDirection;
+        }
+
+        private void TryToJump()
+        {
+            if (_currentJumpCount < _jumpsCount)
+            {
+                Jump();
+            }
+        }
+
+        private void Jump()
+        {
+            _rigidbody.AddForce(new Vector2(0f,1f)*_jumpPower);
+            _currentJumpCount++;
+        }
+
+        private void Move()
+        {
+            transform.Translate(new Vector3(_direction,0f,0f)*_sideSpeed * Time.deltaTime);
+        }
+
+        private void Update()
+        {
+            Move();
+        }
+    }
+}

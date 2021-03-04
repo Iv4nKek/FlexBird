@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Projects\FlexBird" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Code" t="Include">
+          <e p="Bird" t="Include">
+            <e p="Bird.cs" t="Include" />
+            <e p="BirdCollisionHandler.cs" t="Include" />
+            <e p="BirdController.cs" t="Include" />
+            <e p="BirdMovement.cs" t="Include" />
+          </e>
+          <e p="Level" t="Include">
+            <e p="CoinSetup.cs" t="Include" />
+            <e p="GameState.cs" t="Include" />
+            <e p="Generation" t="Include">
+              <e p="LevelGenerator.cs" t="Include" />
+              <e p="PlatformPreset.cs" t="Include" />
+            </e>
+            <e p="LevelState.cs" t="Include" />
+            <e p="ObstacleSetup.cs" t="Include" />
+            <e p="Platform.cs" t="Include" />
+            <e p="PlatformBanner.cs" t="Include" />
+            <e p="PlatformSetuper.cs" t="Include" />
+          </e>
+          <e p="Obstacles" t="Include">
+            <e p="Obstacle.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="FlexBird.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\ivank\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ivank\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FlexBird.-2108171885.00" t="ExcludeRecursive" />
+  </component>
+</project>
