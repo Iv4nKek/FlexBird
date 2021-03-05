@@ -2,24 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6c87f6a-e93b-4d64-9dfe-ccdce6c06011" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Obstacles/HidingObstacle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/Obstacles/HidingObstacle.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Bird/BirdSpawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Bird/BirdSpawner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/Coin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/Coin.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/ObstacleColliderHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/ObstacleColliderHandler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Level/Platform.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Level/Setups.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Level/Setups/CoinSetup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/UI/CoinUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/UI/CoinUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/UI/LevelUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/UI/LevelUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/UI/MenuUI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/UI/MenuUI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/Utils.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlexBird/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlexBird/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FlexBird/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FlexBird/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Bird/Bird.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Bird/Bird.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Bird/BirdCollisionHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Bird/BirdCollisionHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Bird/BirdController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Bird/BirdController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Bird/BirdMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Bird/BirdMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Utils/CameraFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/CameraFollow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Utils/CameraFollow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/CoinSetup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/CoinSetup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Setups/CoinSetup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/GameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Level/Generation/LevelGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Generation/LevelGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/Generation/PlatformPreset.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/Generation/PlatformPreset.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/ObstacleSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/ObstacleSetup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Platform.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/FixedObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Obstacles/FixedObstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/MovingObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Obstacles/MovingObstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Obstacles/Obstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/ObstacleContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Obstacles/ObstacleContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/LevelState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/LevelState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/ObstacleSetup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Setups/ObstacleSetup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/ObstacleSetup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Setups/ObstacleSetup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Platform/Platform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/Platform.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Platform/Platform.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/PlatformBanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Platform/PlatformBanner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/PlatformBanner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Platform/PlatformBanner.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/PlatformSetuper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Level/PlatformSetuper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/FixedObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/FixedObstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/FixedObstacle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/FixedObstacle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/HidingObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/HidingObstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/HidingObstacle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/HidingObstacle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/MovingObstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/MovingObstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/MovingObstacle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/MovingObstacle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/Obstacle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/Obstacle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/ObstacleContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/ObstacleContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/ObstacleContainer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/ObstacleContainer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/ObstaclePreset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/ObstaclePreset.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/Obstacles/ObstaclePreset.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Level/Obstacles/ObstaclePreset.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bird.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bird.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FlexObstacle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FlexObstacle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MoveObstacle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MoveObstacle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacle One.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacle One.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platform.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platform.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/New Obstacle Container.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/New Obstacle Container.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +69,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Projects/FlexBird/Assets/Code/Bird/Bird.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Utils/WallColliderCreator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -45,23 +90,38 @@
       <option value="$PROJECT_DIR$/Assets/Code/Level/PlatformObstackle.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Level/PlatformObstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Bird/BirdCollistionHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Bird/BirdController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Bird/BirdMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Level/CoinSetup.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Obstacles/MoovingObstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Obstacles/ObstaclePreset.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Level/GameState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/CameraFollow.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Bird/BirdCollisionHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Level/Generation/LevelGenerator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Level/Platform.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Obstacles/FixedObstacle.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Level/ObstacleSetup.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Obstacles/HidingObstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Obstacles/ObstacleContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/Bird/Bird.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Obstacles/MovingObstacle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/ObstacleSetup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/CoinSetup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Platform.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/CameraFollow.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Platform/PlatformBanner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Obstacles/MovingObstacle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Setups/ObstacleSetup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Platform/Platform.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Bird/Bird.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Bird/BirdCollisionHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Bird/BirdController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Bird/BirdMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Bird/BirdSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Generation/LevelGenerator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Obstacles/HidingObstacle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Obstacles/ObstacleColliderHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Obstacles/ObstacleContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Setups/CoinSetup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/GameState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/UI/CoinUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/UI/LevelUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/UI/MenuUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/WallColliderCreator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Obstacles/Coin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/Level/Obstacles/Obstacle.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pFpS68yWg4PbvWlsVmxfWrnJkW" />
@@ -107,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614788689049</updated>
       <workItem from="1614788694821" duration="6706000" />
-      <workItem from="1614847981825" duration="31262000" />
+      <workItem from="1614847981825" duration="50559000" />
     </task>
     <task id="LOCAL-00001" summary="Bird movement base">
       <created>1614854878066</created>
@@ -123,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614883808628</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added all Obstacles">
+      <created>1614900125130</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614900125130</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -144,6 +211,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Bird movement base" />
     <MESSAGE value="Level generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Level generation" />
+    <MESSAGE value="Added all Obstacles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all Obstacles" />
   </component>
 </project>

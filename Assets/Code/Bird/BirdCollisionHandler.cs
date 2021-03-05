@@ -7,7 +7,7 @@ namespace Code
 {
     public class BirdCollisionHandler : MonoBehaviour
     {
-        [SerializeField] private GameObject _floor;
+        [SerializeField] private GameObject _platform;
         [SerializeField] private List<GameObject> _walls = new List<GameObject>();
 
         public event Action OnFloorCollision = delegate {  };
@@ -16,15 +16,28 @@ namespace Code
         private void Start()
         {
             GameState.Instance.OnPlatformActivation += ChangePlatform;
+            GameState.Instance.OnLevelStart += Reset;
+        }
+
+        private void OnDestroy()
+        {
+            GameState.Instance.OnPlatformActivation -= ChangePlatform;
+            GameState.Instance.OnLevelStart -= Reset;
+        }
+
+        private void Reset()
+        {
+            _platform = null;
         }
 
         private void ChangePlatform( Platform platform)
         {
-            _floor = platform.gameObject;
+            _platform = platform.gameObject;
         }
+        
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject == _floor || _floor == null)
+            if (other.gameObject == _platform || _platform == null)
             {
                 OnFloorCollision();
             }
@@ -34,8 +47,6 @@ namespace Code
                 OnWallCollision();
             }
         }
-
-        
 
         private void Update()
         {

@@ -18,6 +18,31 @@ namespace Code
         private int _currentJumpCount = 0;
         private float _direction = 1;
 
+        
+        private void Start()
+        {
+            _controller.OnJump += TryToJump;
+            _collisionHandler.OnFloorCollision += ResetJumpCount;
+            GameState.Instance.OnPlatformActivation += OnPlatformActivated;
+            GameState.Instance.OnLevelStart += ResetMovement;
+            _collisionHandler.OnWallCollision += ChangeDirection;
+        }
+
+        private void OnDestroy()
+        {
+            _controller.OnJump -= TryToJump;
+            _collisionHandler.OnFloorCollision -= ResetJumpCount;
+            GameState.Instance.OnPlatformActivation -= OnPlatformActivated;
+            GameState.Instance.OnLevelStart -= ResetMovement;
+            _collisionHandler.OnWallCollision -= ChangeDirection;
+        }
+
+        public void ResetMovement()
+        {
+            _currentJumpCount = 0;
+            _direction = 1;
+            _rigidbody.velocity = new Vector2();
+        }
         private void ResetJumpCount()
         {
             _currentJumpCount = 0;
@@ -28,14 +53,7 @@ namespace Code
             _direction *= -1;
         }
 
-        private void Start()
-        {
-            
-            _controller.OnJump += TryToJump;
-            _collisionHandler.OnFloorCollision += ResetJumpCount;
-            GameState.Instance.OnPlatformActivation += OnPlatformActivated;
-            _collisionHandler.OnWallCollision += ChangeDirection;
-        }
+      
 
         private void OnPlatformActivated( Platform platform)
         {

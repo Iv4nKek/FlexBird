@@ -15,24 +15,48 @@ namespace Code.Level
         
         private float _currentHeight;
         private Queue<Transform> _platforms = new Queue<Transform>();
-        private int count;
+        private int _count;
+        private int _level;
 
         private void Start()
         {
             GameState.Instance.OnPlatformActivation += OnPlatformActivation;
+            GameState.Instance.OnDie += DeleteAll;
+            GameState.Instance.OnLevelStart += CreateStartPlatforms;
+        }
+
+        private void OnDestroy()
+        {
+            GameState.Instance.OnPlatformActivation -= OnPlatformActivation;
+            GameState.Instance.OnDie -= DeleteAll;
+            GameState.Instance.OnLevelStart -= CreateStartPlatforms;
+        }
+
+        private void CreateStartPlatforms()
+        {
+            _level = 0;
             _currentHeight = _spawnStart.position.y;
             GeneratePlatforms(_startAmount);
-            
+        }
+
+        private void DeleteAll()
+        {
+            foreach (var platform in _platforms)
+            {
+                EZ_PoolManager.Despawn(platform);
+            }
         }
 
         private void OnPlatformActivation(Platform platform) => GeneratePlatform();
         private void GeneratePlatform()
         {
             Transform platform = EZ_PoolManager.Spawn(_platformPrefab.transform, new Vector3(0f, _currentHeight, 0f), new Quaternion());
+            platform.GetComponent<Platform>().Level = _level;
+            _level++;
             _platforms.Enqueue(platform);
-            count++;
+            _count++;
             _currentHeight += _height;
-            if (count > _generationLimit)
+            if (_count > _generationLimit)
             {
                 DeleteFirst();
             }
