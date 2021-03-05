@@ -13,7 +13,6 @@
             <e p="BirdMovement.cs" t="Include" />
             <e p="BirdSpawner.cs" t="Include" />
           </e>
-          <e p="CameraFollow.cs" t="Include" />
           <e p="Level" t="Include">
             <e p="GameState.cs" t="Include" />
             <e p="Generation" t="Include">
@@ -43,8 +42,10 @@
             <e p="LevelUI.cs" t="Include" />
             <e p="MenuUI.cs" t="Include" />
           </e>
-          <e p="Utils" t="Include" />
-          <e p="WallColliderCreator.cs" t="Include" />
+          <e p="Utils" t="Include">
+            <e p="CameraFollow.cs" t="Include" />
+            <e p="WallColliderCreator.cs" t="Include" />
+          </e>
         </e>
         <e p="Demigiant" t="Include">
           <e p="DemiLib" t="Include">

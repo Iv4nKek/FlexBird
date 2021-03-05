@@ -17,9 +17,9 @@ namespace Code.Level
             {
                 Vector3 presetPosition = _coinPrefab.transform.position;
                 Vector3 position = presetPosition + _parent.transform.position;
-                Transform coin = EZ_PoolManager.Spawn(_coinPrefab.transform,position,new Quaternion());
-                coin.parent = _parent;
-                coin.transform.localPosition = presetPosition;
+                _createdCoin = EZ_PoolManager.Spawn(_coinPrefab.transform,position,new Quaternion());
+                _createdCoin.parent = _parent;
+                _createdCoin.transform.localPosition = presetPosition;
             }
         }
         private void CheckCoin()
